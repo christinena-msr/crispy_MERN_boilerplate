@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 const modelSchema = new Schema({
     name: { type: String, required: true },
-    count: { type: Number, min: 0, max: 100 },
+    age: { type: Number, min: 0, max: 100 },
     isBool: { type: Boolean, default: false },
     _someId: Schema.Types.ObjectId,
     date: { type: Date, default: Date.now},
